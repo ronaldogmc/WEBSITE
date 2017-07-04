@@ -1,0 +1,116 @@
+﻿
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+
+select {
+    font-size: 14px;
+    border: 1px solid #c0c0c0;
+    padding: 8px;
+}
+
+textarea, input[type="text"], input[type="password"] {
+    font-size: 14px;
+    color: #313131;
+    border: 1px solid #c0c0c0;
+    padding: 8px;
+}
+
+/************CORPO**********************/
+
+body {
+    margin: 0;
+    background-color: #dddddd;
+    font-family: Arial;
+}
+
+/************CABECALHO*****************/
+
+.cabecalho {
+    height: 90px;
+    border-bottom: 1px solid #c0c0c0;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    
+    
+}
+
+    /***************LOGO*****************/
+
+    .cabecalho .logomarca {
+        width: 90px;
+        height: 90px;
+        float: left;
+        text-align: center;
+        padding: 15px;
+    }
+
+a {
+    color: #0066cc;
+   
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #0066cc;
+    }
+
+/***************MENU*****************/
+
+.cabecalho .menu {
+    float: left;
+    padding: 35px;
+    right: 20px;
+    bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+}
+
+    .cabecalho .menu a {
+        color: black;
+        text-decoration: none;
+        font-size: 12px;
+        margin-right: 10px;
+        font-size: 18px; 
+    }
+
+        .cabecalho .menu a:hover {
+            color: #0066cc;
+            border-bottom: 4px solid #0066cc;
+            font-size: 18px; 
+        }
+
+/***************CONTEUDO************/
+
+.conteudo {
+  
+    min-height: 1200px;
+    padding: 30px;
+     background-image: url('../images/back2.jpg');
+}
+
+/***************RODAPE**************/
+
+.rodape {
+    height: 150px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+   
+}
+
+
+/***************CAIXAS DE TEXTO**************/
+
+.caixa{
+    width: 400px;
+
+}
+
+.caixacontato{
+       width: 350px;
+}

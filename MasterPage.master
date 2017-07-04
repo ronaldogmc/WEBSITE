@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>FLORESTAN FERNANDES</title>
+
+    <!-- METADADOS PARA INDEXAÇÃO NA BUSCA DO GOOGLE -->
+    <meta name="keywords" content="escola,americana" />
+    <meta name="description" content="web site da emef florestan fernandes" />
+    <meta name="author" content="ronaldo" />
+
+    <!-- EXIBE O ICONE NA BARRA DO NAVEGADOR -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.png" />
+
+    <!-- CARREGA O ARQUIVO CSS -->
+    <link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" />
+
+    <!-- CARREGA O ARQUIVO CSS DO SLIDER -->
+    <link rel="stylesheet" type="text/css" href="~/js/flexslider/flexslider.css" />
+
+    <!-- CARREGA O JAVASCRIPT DO SLIDER -->
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/flexslider/flexslider.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+         <!-- COLOCAR SCRIPT CASO FOR USAR CONTROLE DE AJAX -->
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+        <!-- CABEÇALHO -->
+        <div class="cabecalho">
+
+            <!--LOGOMARCA -->
+            <div class="logomarca">
+                <img src="../images/logo5.png" />
+            </div>
+
+            <!--MENU -->
+            <div class="menu">
+                <a href="../Default.aspx">HOME</a>    
+                <a href="../TrabalheConosco.aspx">TRABALHE CONOSCO</a>
+                <asp:HyperLink ID="HyperLink1" NavigateUrl="~/Administrador/CandidatosEdit.aspx" runat="server">EDITAR</asp:HyperLink>
+                 ------------------------>
+                <a href="../Funcionarios.aspx">FUNCIONARIOS</a>  
+                <a href="../Abonadas.aspx">ABONADA</a> 
+                 <asp:HyperLink ID="HyperLink2" NavigateUrl="~/logout.aspx" runat="server">LOGOUT</asp:HyperLink>
+
+
+                
+               
+            </div>
+        </div>
+
+        <!--AREA DE CONTEUDO -->
+        <div class="conteudo">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div style="clear:both"></div>
+
+        <!-- RODAPÉ -->
+        <div class="rodape">
+           EMEF Profº Florestan Fernandes<br />
+           Escola Municipal de Americana SP
+        </div>
+    </form>
+</body>
+</html>
